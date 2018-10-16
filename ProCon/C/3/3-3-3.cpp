@@ -21,9 +21,21 @@ double ld(int d, int y){
 int solve(){
     sort(xy,xy+n);
     int r=1, x=xy[0].first, y=xy[0].second;
+    double rightEdge = x + ld(d, y);
     for(int i=1; i<n; i++){
         int xi = xy[i].first, yi = xy[i].second;
         if(yi > d)return -1;
+
+        if(xi-ld(d,yi) > rightEdge){
+            r++;
+            x = xi;
+            y = yi;
+            rightEdge = x + ld(d,y);
+        }else{
+            rightEdge = (rightEdge < xi+ld(d,yi))? rightEdge: xi+ld(d,yi);
+        }
+
+        /*
         if(x+ld(d,y) >= xi-ld(d,yi)){//現在の範囲と共有部分がある (   x { ) z    }
             if(x+ld(d,y) > xi+ld(d,yi)){//範囲が狭くなる (      x  { z })
                 x = xi;
@@ -34,6 +46,7 @@ int solve(){
             x = xi;
             y = yi;
         }
+        */
     }
 
     return r;
