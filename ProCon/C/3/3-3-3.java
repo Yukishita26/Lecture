@@ -1,3 +1,4 @@
+//http://poj.org/problem?id=1328
 import java.util.Arrays;
 import java.util.Scanner;
 import static java.lang.System.*;
