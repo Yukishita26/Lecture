@@ -1,0 +1,5 @@
+/
+	a
+About TLE
+	cin/cout → scanf/printfにするときは #include<iostream>を#include<stdio.h>に変更
+	intで収まるなら#define int long longを外したほうが速い
