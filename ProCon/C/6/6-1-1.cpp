@@ -1,6 +1,6 @@
 // http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=DPL_1_B&lang=jp
 #if 0
-
+解説どおり
 #endif
 #include <iostream>
 //#define int long long

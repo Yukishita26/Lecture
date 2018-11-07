@@ -1,5 +1,22 @@
-/
-	a
+構造体Tips
+	class
+		class <Class名>{
+			private:
+			<private変数>
+			public:
+			<Class名>(<引数> arg){//コンストラクタ
+				hogehuga;
+			}
+			<その他関数>{}
+		}; //セミコロンが必要
+		呼び出し
+		auto hoge = <コンストラクタ>();
+	struct
+		struct _hoge {
+			int x;
+			string s;
+		}
+	
 About TLE
 	cin/cout → scanf/printfにするときは #include<iostream>を#include<stdio.h>に変更
 	intで収まるなら#define int long longを外したほうが速い

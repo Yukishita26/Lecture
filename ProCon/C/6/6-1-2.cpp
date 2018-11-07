@@ -1,6 +1,6 @@
-// http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=DPL_1_B&lang=jp
+// http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=DPL_1_C&lang=jp
 #if 0
-
+同じ品を複数選ぶ方法を計算量を変えずに計算する方法がなかなか思いつかなかった．
 #endif
 #include <iostream>
 //#define int long long
@@ -17,7 +17,7 @@ int solve(){
             }else if(w<Ws[i-1]){
                 T[i][w] = T[i-1][w]; 
             }else{
-                T[i][w] = max(T[i-1][w], max(T[i-1][w-Ws[i-1]], T[i][w-Ws[i-1]])+Vs[i-1]);
+                T[i][w] = max(T[i-1][w], T[i][w-Ws[i-1]]+Vs[i-1]);
             }
         }
     }
