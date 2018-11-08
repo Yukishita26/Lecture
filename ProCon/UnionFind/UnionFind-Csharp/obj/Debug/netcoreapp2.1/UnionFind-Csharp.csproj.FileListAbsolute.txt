@@ -1,0 +1,11 @@
+C:\Git\Lecture\ProCon\C\7\UnionFind-Csharp\bin\Debug\netcoreapp2.1\UnionFind-Csharp.deps.json
+C:\Git\Lecture\ProCon\C\7\UnionFind-Csharp\bin\Debug\netcoreapp2.1\UnionFind-Csharp.runtimeconfig.json
+C:\Git\Lecture\ProCon\C\7\UnionFind-Csharp\bin\Debug\netcoreapp2.1\UnionFind-Csharp.runtimeconfig.dev.json
+C:\Git\Lecture\ProCon\C\7\UnionFind-Csharp\bin\Debug\netcoreapp2.1\UnionFind-Csharp.dll
+C:\Git\Lecture\ProCon\C\7\UnionFind-Csharp\bin\Debug\netcoreapp2.1\UnionFind-Csharp.pdb
+C:\Git\Lecture\ProCon\C\7\UnionFind-Csharp\obj\Debug\netcoreapp2.1\UnionFind-Csharp.csprojAssemblyReference.cache
+C:\Git\Lecture\ProCon\C\7\UnionFind-Csharp\obj\Debug\netcoreapp2.1\UnionFind-Csharp.csproj.CoreCompileInputs.cache
+C:\Git\Lecture\ProCon\C\7\UnionFind-Csharp\obj\Debug\netcoreapp2.1\UnionFind-Csharp.AssemblyInfoInputs.cache
+C:\Git\Lecture\ProCon\C\7\UnionFind-Csharp\obj\Debug\netcoreapp2.1\UnionFind-Csharp.AssemblyInfo.cs
+C:\Git\Lecture\ProCon\C\7\UnionFind-Csharp\obj\Debug\netcoreapp2.1\UnionFind-Csharp.dll
+C:\Git\Lecture\ProCon\C\7\UnionFind-Csharp\obj\Debug\netcoreapp2.1\UnionFind-Csharp.pdb

@@ -1,0 +1,14 @@
+{
+  "ProjectFilePath": "c:\\Git\\Lecture\\ProCon\\C\\7\\UnionFind-Csharp\\UnionFind-Csharp.csproj",
+  "TargetFramework": "netcoreapp2.1",
+  "TagHelpers": [],
+  "Configuration": {
+    "ConfigurationName": "UnsupportedRazor",
+    "LanguageVersion": "1.0",
+    "Extensions": [
+      {
+        "ExtensionName": "UnsupportedRazorExtension"
+      }
+    ]
+  }
+}
