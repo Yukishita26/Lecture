@@ -43,3 +43,39 @@ def generalization_error(f, M):  # f の汎化誤差をM個のサンプルで近
             correct = correct + 1
 
     return 1 - 1.0 * correct / M
+
+
+#サンプルの生成
+X, y = generate(300)
+
+#真の識別関数の描画
+
+delta = 0.025
+x1range = np.arange(-2, 2, delta)
+x2range = np.arange(-2, 2, delta)
+X1, X2 = np.meshgrid(x1range, x2range)
+Z = th1 * X1**2 + th2 * X1 * X2 - th3 * X2**2
+plt.contour(X1, X2, Z, [th4], colors='black')
+
+#散布図の描画
+
+plt.scatter(
+    X[y == 1, 0],
+    X[y == 1, 1],
+    c="b",
+    alpha=0.4,
+    marker=r'$\odot$',
+    label="Positive")
+plt.scatter(
+    X[y == -1, 0],
+    X[y == -1, 1],
+    c="r",
+    alpha=0.4,
+    marker=r'$\otimes$',
+    label="Negative")
+plt.xlim([-6, 6])
+plt.ylim([-6, 6])
+plt.xlabel(r'$x_1$')
+plt.ylabel(r'$x_2$')
+plt.legend(loc=1)
+plt.show()
