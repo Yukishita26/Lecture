@@ -1,1 +1,5 @@
 StasticalML4/.ipynb_checkpoints/
+*.bin
+*.npy
+StatDataAnalysis/report/4fxyz_movie.mp4
+*.zip
