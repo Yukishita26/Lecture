@@ -49,7 +49,7 @@ $\log\mathcal{L}(x)=-\frac{x^2}2$ とすれば平均0，分散1の正規分布�
 
 $l,m,n$ は量子数，$N_{l,n},\;M_{l,m}$ は規格化定数，$L_k^j(x)$ はラゲールの陪多項式， $P_k^j(x)$ はルジャンドルの陪多項式である．
 
-ここで，ある座標点 $(x,y,z)$ で電子が観測される確率は $|\Psi(x,y,z)|^2dxdydz$ と表され，これを極座標形式で表すと $|\Psi(\rho, \theta, \phi)|^2 r^2\sin\theta\; d\rho d\theta d\phi$ となるから，規格化定数を除いた
+ここで，ある座標点 $(x,y,z)$ で電子が観測される確率は $|\Psi(x,y,z)|^2dxdydz$ と表され，これを極座標形式で表すと $|\Psi(\rho, \theta, \phi)|^2 \rho^2\sin\theta\; d\rho d\theta d\phi$ となるから，規格化定数を除いた
 
 ```math
 \mathcal{L}_{l,m,n}(\rho, \theta, \phi)= \left\{ \left(\frac{\rho}{n}\right)^l e^{-\frac{\rho}{n}} L_{n+l}^{2l+1}\left(\frac{\rho}{n}\right) P_l^{|m|}(\cos\theta)e^{im\phi} \right\}^2\rho^2\sin\theta
@@ -63,10 +63,10 @@ $l,m,n$ は量子数，$N_{l,n},\;M_{l,m}$ は規格化定数，$L_k^j(x)$ は�
 \mathcal{L}_{1,0,1}(\rho, \theta, \phi) = \rho \exp\left(\rho\right) \cos^2\theta \times \rho^2\sin\theta
 ```
 
-$4\mathcal{f}_{z(5z^2-r^2)}$ 軌道は
+$4\mathcal{f}_{xyz}$ 軌道は，$\Psi_{3,2,4}$ と $\Psi_{3,-2,4}$ の線形結合をとり実数のみ現れるようにすることで
 
 ```math
-\mathcal{L}_{3,0,4}(\rho, \theta, \phi) = \rho^6 \exp\left(\frac\rho2\right) \left(5\cos^3\theta -4\cos\theta \right)^2\times \rho^2\sin\theta
+\mathcal{L}_{3,\pm 2,4}(\rho, \theta, \phi) = \rho^6 \exp\left(\frac\rho2\right) \left(\cos\theta\sin^2\theta\sin2\phi \right)^2\times \rho^2\sin\theta
 ```
 
 のように表される．
@@ -78,40 +78,38 @@ $2\mathrm{p}_z$，$3\mathrm{p}_z$，$3\mathrm{d}_{zx}$，$4\mathrm{f}_{xyz}$，$
 
 実行コードは`hydrogen_*.R`である．
 
+<style>
+figure{
+    text-align: center
+}
+img{
+    width: 40%
+}
+</style>
 <figure>
-    <center>
-        <img src="2pz-1.png" width="40%">
-        <img src="2pz-2.png" width="40%">
+        <img src="2pz-1.png">
+        <img src="2pz-2.png">
         <figcaption> 2pz 軌道のプロット </figcaption>
-    </center>
 </figure>
 <figure>
-    <center>
-    <img src="3pz-1.png" width="40%">
-    <img src="3pz-2.png" width="40%">
+    <img src="3pz-1.png">
+    <img src="3pz-2.png">
     <figcaption> 3pz 軌道のプロット </figcaption>
-    </center>
 </figure>
 <figure>
-    <center>
-    <img src="3dzx-1.png" width="40%">
-    <img src="3dzx-2.png" width="40%">
+    <img src="3dzx-1.png">
+    <img src="3dzx-2.png">
     <figcaption> 3dzx 軌道のプロット </figcaption>
-    </center>
 </figure>
 <figure>
-    <center>
-    <img src="4fxyz-1.png" width="40%">
-    <img src="4fxyz-2.png" width="40%">
+    <img src="4fxyz-1.png">
+    <img src="4fxyz-2.png">
     <figcaption> 4fxyz 軌道のプロット </figcaption>
-    </center>
 </figure>
 <figure>
-    <center>
-    <img src="4fz5z3r-1.png" width="40%">
-    <img src="4fz5z3r-2.png" width="40%">
+    <img src="4fz5z3r-1.png">
+    <img src="4fz5z3r-2.png">
     <figcaption> 4fz5z3r 軌道のプロット </figcaption>
-    </center>
 </figure>
 
 ## 考察
